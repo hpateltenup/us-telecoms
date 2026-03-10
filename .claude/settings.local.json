@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r Inter /d/Hardik/Workspace/Vuejs/us-telecoms/apps --include=*.ts --include=*.tsx --include=*.vue --include=*.css --include=*.json)",
+      "Bash(grep -r \"Inter\\\\|google\" /d/Hardik/Workspace/Vuejs/us-telecoms/apps --include=\"*.html\" --include=\"*.vue\" --include=\"*.ts\" ! -path \"*/node_modules/*\" ! -path \"*/dist/*\")",
+      "Bash(grep -r \"googleFontUrl\\\\|BrandConfig\" /d/Hardik/Workspace/Vuejs/us-telecoms --include=\"*.ts\" --include=\"*.vue\" ! -path \"*/node_modules/*\" ! -path \"*/dist/*\")",
+      "Bash(grep -r \"definePreset\\\\|semantic\" /d/Hardik/Workspace/Vuejs/us-telecoms/node_modules/.pnpm/@primeuix+themes*/node_modules/@primeuix/themes --include=*.d.ts)",
+      "Bash(find /d/Hardik/Workspace/Vuejs/us-telecoms/node_modules/.pnpm/@primeuix+themes*/node_modules/@primeuix/themes -name \"index.d.ts\")",
+      "Bash(npx turbo:*)",
+      "Bash(find /d/Hardik/Workspace/Vuejs/us-telecoms -name tailwind.config.* -o -name postcss.config.*)",
+      "Bash(find d:/Hardik/Workspace/Vuejs/us-telecoms -name vite.config.*)",
+      "Bash(find d:/Hardik/Workspace/Vuejs/us-telecoms/packages -name *.vue)",
+      "Bash(for app:*)",
+      "Bash(do echo:*)",
+      "Read(//d/Hardik/Workspace/Vuejs/us-telecoms/apps/$app/**)",
+      "Bash(done)",
+      "Bash(for f:*)",
+      "Bash(do)",
+      "Bash(sed -i -e 's/bg-surface-50 px-6 py-20/bg-surface-50 dark:bg-surface-950 px-6 py-20/' -e 's/text-surface-900 font-bold/text-surface-900 dark:text-surface-0 font-bold/' -e 's/text-surface-500 text-lg/text-surface-500 dark:text-surface-400 text-lg/' -e 's/bg-surface-0 shadow-sm/bg-surface-0 dark:bg-surface-800 shadow-sm/' -e 's/text-surface-900 font-medium/text-surface-900 dark:text-surface-0 font-medium/' -e 's/text-surface-500 leading-normal/text-surface-500 dark:text-surface-400 leading-normal/' -e 's/bg-surface-200\"\" \\\\/>/bg-surface-200 dark:bg-surface-700\"\" \\\\/>/' -e 's/text-surface-900 leading-tight/text-surface-900 dark:text-surface-0 leading-tight/' -e 's/text-surface-500 leading-tight/text-surface-500 dark:text-surface-400 leading-tight/' -e 's/text-surface-800 leading-tight/text-surface-800 dark:text-surface-100 leading-tight/' \"$f\")"
+    ]
+  }
+}

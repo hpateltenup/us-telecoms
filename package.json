@@ -1,0 +1,31 @@
+{
+  "name": "us-telecoms",
+  "private": true,
+  "packageManager": "pnpm@10.31.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "vue": "catalog:",
+    "vue-router": "catalog:",
+    "pinia": "catalog:",
+    "vue-i18n": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "@vitejs/plugin-vue": "^6.0.4",
+    "tailwindcss": "catalog:",
+    "@tailwindcss/vite": "^4.2.1",
+    "vue-tsc": "^3.2.5",
+    "turbo": "^2.8.14",
+    "eslint": "^10.0.3",
+    "prettier": "^3.8.1",
+    "vitest": "^4.0.18",
+    "@us-telecoms/eslint-config": "workspace:*"
+  }
+}

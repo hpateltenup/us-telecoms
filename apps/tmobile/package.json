@@ -1,0 +1,16 @@
+{
+  "name": "@us-telecoms/tmobile",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@us-telecoms/ui-kit": "workspace:*",
+    "@us-telecoms/shared": "workspace:*"
+  }
+}

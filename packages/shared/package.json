@@ -1,0 +1,17 @@
+{
+  "name": "@us-telecoms/shared",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "lint": "eslint src/",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "axios": "catalog:"
+  },
+  "peerDependencies": {
+    "vue": "catalog:"
+  }
+}

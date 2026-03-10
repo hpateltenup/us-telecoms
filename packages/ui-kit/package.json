@@ -1,0 +1,19 @@
+{
+  "name": "@us-telecoms/ui-kit",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "lint": "eslint src/",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "primevue": "catalog:",
+    "@primeuix/themes": "catalog:",
+    "primeicons": "catalog:"
+  },
+  "peerDependencies": {
+    "vue": "catalog:"
+  }
+}
