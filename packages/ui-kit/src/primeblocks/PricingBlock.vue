@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-surface-50 dark:bg-surface-950 px-6 py-20 md:px-2 lg:px-2">
+  <div class="bbg-surface-50 dark:bg-surface-950 px-6 py-20 md:px-12 lg:px-20">
     <div class="flex flex-col gap-4 items-center justify-center mb-12">
       <div class="text-surface-900 dark:text-surface-0 font-bold text-4xl lg:text-5xl text-center leading-tight">Pricing Plans</div>
       <div class="text-surface-500 dark:text-surface-400 text-lg text-center leading-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.</div>
