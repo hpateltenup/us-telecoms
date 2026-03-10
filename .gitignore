@@ -12,6 +12,7 @@ dist
 .vscode/*
 !.vscode/extensions.json
 .idea
+.cursor
 
 # OS
 .DS_Store
