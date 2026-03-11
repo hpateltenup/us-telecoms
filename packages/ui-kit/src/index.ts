@@ -3,6 +3,8 @@ export { createBrandPreset, createPrimeVueConfig, type BrandConfig } from './the
 
 // Components
 export { default as AppButton } from './components/AppButton.vue';
+export { default as AppDialog } from './components/AppDialog.vue';
+export { default as AppInputText } from './components/AppInputText.vue';
 
 // Composables
 export { useLoader } from './composables/useLoader';

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { AppButton, PricingBlock } from '@us-telecoms/ui-kit';
+import { AppButton, AppDialog, AppInputText, PricingBlock } from '@us-telecoms/ui-kit';
 import { isValidPhone } from '@us-telecoms/shared';
 import InputText from 'primevue/inputtext';
 
@@ -11,6 +11,7 @@ import Card from 'primevue/card';
 const phone = ref('');
 const inputValue = ref('');
 const validationResult = ref<string | null>(null);
+const dialogVisible = ref(false);
 
 function validatePhone() {
   validationResult.value = isValidPhone(phone.value)
@@ -198,6 +199,23 @@ function validatePhone() {
         <AppButton label="Success" severity="success" />
         <AppButton label="Danger" severity="danger" />
         <AppButton label="Outlined" outlined />
+      </div>
+
+      <div class="mt-6 flex flex-col gap-2">
+        <label class="text-sm font-medium text-gray-700">AppInputText</label>
+        <AppInputText v-model="inputValue" placeholder="Type something..." class="w-full" />
+        <p class="text-sm text-gray-500">Value: {{ inputValue }}</p>
+      </div>
+
+      <div class="mt-6">
+        <label class="mb-2 block text-sm font-medium text-gray-700">AppDialog</label>
+        <AppButton label="Open Dialog" @click="dialogVisible = true" />
+        <AppDialog v-model:visible="dialogVisible" header="App Dialog" modal>
+          <p>This is the AppDialog wrapper component.</p>
+          <template #footer>
+            <AppButton label="Close" severity="secondary" @click="dialogVisible = false" />
+          </template>
+        </AppDialog>
       </div>
     </div>
 
