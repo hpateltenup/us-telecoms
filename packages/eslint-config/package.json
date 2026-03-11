@@ -1,0 +1,11 @@
+{
+  "name": "@us-telecoms/eslint-config",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "eslint-plugin-vue": "^9.32.0",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0"
+  }
+}

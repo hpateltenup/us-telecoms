@@ -1,0 +1,21 @@
+/* 1. Layer order declaration — defines CSS priority (lowest → highest) */
+@layer tailwind-base, primevue, tailwind-utilities;
+
+/* 2. Tailwind's CSS reset (normalize browser defaults) — lowest priority */
+@import 'tailwindcss/preflight' layer(tailwind-base);
+
+/* 3. Tailwind's default theme (colors, spacing, font sizes, etc.) — lowest priority */
+@import 'tailwindcss/theme' layer(tailwind-base);
+
+/* 4. UI-kit shared theme (brand colors, radii, default font, @source for component scanning) */
+@import '@us-telecoms/ui-kit/src/theme/tailwind.css';
+
+/* 5. Add third-party CSS imports here (e.g., Google Fonts, icon libraries) */
+
+/* 6. Tailwind utility classes (flex, p-6, text-xl, etc.) — highest priority, wins over PrimeVue */
+@import 'tailwindcss/utilities' layer(tailwind-utilities);
+
+/* 7. App-specific theme overrides */
+@theme {
+  --font-sans: 'Roboto', sans-serif;
+}

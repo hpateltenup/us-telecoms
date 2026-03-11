@@ -1,0 +1,10 @@
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@import 'tailwindcss/preflight' layer(tailwind-base);
+@import 'tailwindcss/theme' layer(tailwind-base);
+@import '@us-telecoms/ui-kit/src/theme/tailwind.css';
+@import 'tailwindcss/utilities' layer(tailwind-utilities);
+
+@theme {
+  --font-sans: 'Nunito Sans', sans-serif;
+}
