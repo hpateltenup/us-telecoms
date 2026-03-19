@@ -46,7 +46,7 @@ This command will install dependencies for all workspaces (apps and packages).
 Start the development server:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 This will start the development servers for all applications in watch mode.
@@ -56,7 +56,7 @@ This will start the development servers for all applications in watch mode.
 The project uses Turbo for monorepo management. You can run:
 
 - `pnpm i` - Install dependencies across all workspaces
-- `npm run dev` - Start development servers for all applications
+- `pnpm run dev` - Start development servers for all applications
 - `turbo build` - Build all applications and packages (if available)
 
 ## Project Management
